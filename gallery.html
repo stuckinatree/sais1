@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Picture Gallery </title>
+	<style>
+
+		body{
+			-webkit-shadow: 42px 50px 100px 50px #7AE7FF; 
+box-shadow: 42px 50px 100px 50px #7AE7FF;
+			background-color: gainsboro;
+		}
+
+		.wrapper{
+			width: 100%;
+			margin: 30px auto;
+		}
+
+		div.gallery{
+			margin-top: 30px;
+		}
+
+		ul{
+			list-style-type: none;
+		}
+
+		div.gallery ul li{
+			position: relative;
+			float: left;
+			width: 250px;
+			height: 250px;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		div.gallery ul li img{
+			position:  absolute;
+			left: 0;
+			top: 0;
+			padding: 0px;
+			width: 250px;
+			height: 250px;
+		}
+
+		div.gallery ul li, div.gallery li img{
+			transition: all 1s;
+		}
+
+		div.gallery ul li img:hover{
+			width: 250px;
+			height: 250px;
+			margin top: -250;
+			top: 9999%;
+			left: 9999%;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<button class="btn" onclick = "document.location = './index.html' "> back </button>
+	</div>
+	<div id= "header">
+		<h1> Photo Gallery </h1>
+	</div>
+
+	<div class="wrapper">
+		<div class="gallery">
+			<ul>
+				<li><img src = "boxel rebound.png"></li>
+				<li><img src = "dharmann.png"></li>
+				<li><img src = "gmail.png"></li>
+				<li><img src = "rickroll.png"></li>
+				<li><img src = "geometry2.png"></li>
+				<li><img src = "pikachu.png"></li>
+				<li><img src = "minecraft2.png"></li>
+				<li><img src = "profile.png"></li>
+				<li><img src = "pepper.png"></li>
+				<li><img src = "code.png"></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
